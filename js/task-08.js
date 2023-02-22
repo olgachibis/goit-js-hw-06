@@ -1,4 +1,4 @@
-const formEl = document.querySelector(".login-form");
+const formEl = document.querySelector(`.login-form`);
 
 function checkSubmit(event) {
   event.preventDefault();
@@ -8,7 +8,7 @@ function checkSubmit(event) {
   } = event.currentTarget;
 
   if (email.value === "" || password.value === "") {
-    return alert("Please fill in all fields");
+    return alert(`Please fill in all fields`);
   }
 
   const result = { email: email.value, password: password.value };
@@ -16,4 +16,4 @@ function checkSubmit(event) {
   event.currentTarget.reset();
 }
 
-formEl.addEventListener("submit", checkSubmit);
+formEl.addEventListener(`submit`, checkSubmit);

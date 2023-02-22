@@ -13,5 +13,5 @@ const countIncr = function() {
   spanEl.textContent = counterValue;
 };
 
-decr.addEventListener("click", countDecr);
-incr.addEventListener("click", countIncr);
+decr.addEventListener(`click`, countDecr);
+incr.addEventListener(`click`, countIncr);
